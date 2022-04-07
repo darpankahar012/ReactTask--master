@@ -1,0 +1,6 @@
+export const imageActionTypes = {
+    GET_ALL_IMAGE: "GET_ALL_IMAGE",
+    GET_ALL_IMAGE_SUCCESS: "GET_ALL_IMAGE_SUCCESS",
+    GET_ALL_IMAGE_ERROR: "GET_ALL_IMAGE_ERROR",
+    RESET: "RESET"
+}
