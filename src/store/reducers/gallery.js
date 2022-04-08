@@ -8,19 +8,19 @@ const initialState = {
 
 export const image = (state = initialState, action) => {
     switch (action.type) {
-        case imageActionTypes.GET_ALL_USER:
+        case imageActionTypes.GET_ALL_IMAGE:
             return {
                 ...state,
                 loading: true
             }
-        case imageActionTypes.GET_ALL_USER_SUCCESS:
+        case imageActionTypes.GET_ALL_IMAGE_SUCCESS:
             return {
                 ...state,
                 loading: false,
                 imageList: action.payload,
                 imageListError: ""
             }
-        case imageActionTypes.GET_ALL_USER_ERROR:
+        case imageActionTypes.GET_ALL_IMAGE_ERROR:
             return {
                 ...state,
                 loading: false,

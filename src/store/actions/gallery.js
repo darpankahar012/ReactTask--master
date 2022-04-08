@@ -1,19 +1,19 @@
 import { imageActionTypes } from "../constants"
 
-export const getAllUser = () => {
+export const getAllImage = () => {
     return {
         type: imageActionTypes.GET_ALL_IMAGE,
     }
 }
 
-export const getAllUserSuccess = (data) => {
+export const getAllImageSuccess = (data) => {
     return {
         type: imageActionTypes.GET_ALL_IMAGE_SUCCESS,
         payload: data
     }
 }
 
-export const getAllUserError = (error) => {
+export const getAllImageError = (error) => {
     return {
         type: imageActionTypes.GET_ALL_IMAGE_ERROR,
         payload: error

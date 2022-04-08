@@ -12,14 +12,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import Header from './components/Header';
 import Login from './components/pages/Login/login';
 
-// const Dashboard = lazy(() => import("./components/dashBoard"));
 const Gallery = lazy(() => import("./components/pages/Gallery"));
-
-
 
 toast.configure()
 
 export class App extends Component {
+
   render() {
     let load = suspenseFallbackLoader()
     return (
